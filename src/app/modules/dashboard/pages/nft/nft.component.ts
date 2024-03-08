@@ -7,16 +7,16 @@ import { NftDualCardComponent } from '../../components/nft/nft-dual-card/nft-dua
 import { NftHeaderComponent } from '../../components/nft/nft-header/nft-header.component';
 
 @Component({
-    selector: 'app-nft',
-    templateUrl: './nft.component.html',
-    standalone: true,
-    imports: [
-        NftHeaderComponent,
-        NftDualCardComponent,
-        NftSingleCardComponent,
-        NftChartCardComponent,
-        NftAuctionsTableComponent,
-    ],
+  selector: 'app-nft',
+  templateUrl: './nft.component.html',
+  standalone: true,
+  imports: [
+    NftHeaderComponent,
+    NftDualCardComponent,
+    NftSingleCardComponent,
+    NftChartCardComponent,
+    NftAuctionsTableComponent,
+  ],
 })
 export class NftComponent implements OnInit {
   nft: Array<Nft>;
@@ -31,8 +31,8 @@ export class NftComponent implements OnInit {
         price: 187.47,
         ending_in: '06h 52m 47s',
         last_bid: 0.12,
-        image: './assets/images/img-01.jpg',
-        avatar: './assets/avatars/avt-01.jpg',
+        image: './assets/images/img-404.jpg',
+        avatar: './assets/avatars/avt-404.jpg',
       },
       {
         id: 34356772,

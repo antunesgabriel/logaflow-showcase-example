@@ -1,6 +1,6 @@
 {
   "name": "angular-tailwind",
-  "displayName": "Angular Tailwind",
+  "displayName": "Acme Inc",
   "version": "0.4.1",
   "description": "Angular & Tailwind CSS Admin Dashboard Starter Kit, Free and Open Source",
   "homepage": "https://github.com/luciano-work/angular-tailwind#readme",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --open",
+    "start": "ng serve --port=4404 --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

@@ -62,7 +62,7 @@ export class NftChartCardComponent implements OnInit, OnDestroy {
           shadeIntensity: 1,
           opacityFrom: 0.4,
           opacityTo: 0.2,
-          stops: [15, 120, 100],
+          // stops: [15, 120, 100],
         },
       },
       stroke: {

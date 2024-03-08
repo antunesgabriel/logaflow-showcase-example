@@ -2,13 +2,20 @@
 <html lang="en" data-theme="base">
   <head>
     <meta charset="utf-8" />
-    <title>Angular Tailwind</title>
+    <title>Acme Inc</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script
+      type="module"
+      crossorigin="true"
+      async
+      src="http://localhost:4343/dist/addons/logaflow-widget.es.js?version=1.0.1"></script>
   </head>
 
   <body class="bg-background font-poppins selection:bg-primary selection:text-primary-foreground">
+    <logaflow-widget project-key="700fcde3-8cd1-4eb8-b182-794db153104d" trigger-text="Feedback"></logaflow-widget>
+
     <app-root>
       <div class="flex h-screen">
         <div class="m-auto">
