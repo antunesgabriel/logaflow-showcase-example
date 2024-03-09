@@ -31,8 +31,8 @@ export class NftComponent implements OnInit {
         price: 187.47,
         ending_in: '06h 52m 47s',
         last_bid: 0.12,
-        image: './assets/images/img-404.jpg',
-        avatar: './assets/avatars/avt-404.jpg',
+        image: './assets/images/img-1.jpg',
+        avatar: './assets/avatars/avt-1.jpg',
       },
       {
         id: 34356772,
@@ -51,5 +51,9 @@ export class NftComponent implements OnInit {
     ];
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.error('GET https://cripto.com/items/5adub 404 (Not Found)');
+    console.log('Acme Inc. application v1.0.0');
+    console.warn('Third-party cookie will be blocked. Learn more in the Issues tab.');
+  }
 }

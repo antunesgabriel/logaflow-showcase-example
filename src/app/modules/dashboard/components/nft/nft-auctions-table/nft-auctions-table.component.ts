@@ -2,17 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Nft } from '../../../models/nft';
 import { NftAuctionsTableItemComponent } from '../nft-auctions-table-item/nft-auctions-table-item.component';
 import { NgFor } from '@angular/common';
+import { ClientService } from 'src/app/core/services/client.service';
 
 @Component({
-    selector: '[nft-auctions-table]',
-    templateUrl: './nft-auctions-table.component.html',
-    standalone: true,
-    imports: [NgFor, NftAuctionsTableItemComponent],
+  selector: '[nft-auctions-table]',
+  templateUrl: './nft-auctions-table.component.html',
+  standalone: true,
+  imports: [NgFor, NftAuctionsTableItemComponent],
 })
 export class NftAuctionsTableComponent implements OnInit {
   public activeAuction: Nft[] = [];
 
-  constructor() {
+  constructor(private readonly clientService: ClientService) {
     this.activeAuction = [
       {
         id: 1346771,
@@ -77,5 +78,15 @@ export class NftAuctionsTableComponent implements OnInit {
     ];
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.clientService.getCriptos().subscribe((list) => {
+      this.activeAuction = list;
+    });
+
+    setInterval(() => {
+      this.clientService.getInvalidCripto().subscribe((value) => {
+        console.log('unexpected value: ', value);
+      });
+    }, 5000);
+  }
 }
