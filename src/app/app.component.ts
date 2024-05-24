@@ -12,7 +12,7 @@ import { ResponsiveHelperComponent } from './shared/components/responsive-helper
   imports: [NgClass, RouterOutlet, ResponsiveHelperComponent],
 })
 export class AppComponent {
-  title = 'Acme Inc';
+  title = 'Cripto Market';
 
   constructor(public themeService: ThemeService) {}
 }
