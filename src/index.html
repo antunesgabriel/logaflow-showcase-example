@@ -14,7 +14,7 @@
   </head>
 
   <body class="bg-background font-poppins selection:bg-primary selection:text-primary-foreground">
-    <logaflow-widget project-key="700fcde3-8cd1-4eb8-b182-794db153104d" trigger-text="Feedback"></logaflow-widget>
+    <!-- <logaflow-widget project-key="700fcde3-8cd1-4eb8-b182-794db153104d" trigger-text="Feedback"></logaflow-widget> -->
 
     <app-root>
       <div class="flex h-screen">
@@ -39,5 +39,16 @@
         </div>
       </div>
     </app-root>
+    <script>
+      window._is_logaflow_debug = true;
+
+      const widget = document.createElement('logaflow-widget');
+
+      widget.setAttribute('project-key', 'd06343cc-f09a-4e83-8735-2f0264ccdde5');
+
+      widget.setAttribute('trigger-text', 'Feedback');
+
+      document.body.append(widget);
+    </script>
   </body>
 </html>
