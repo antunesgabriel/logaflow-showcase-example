@@ -10,7 +10,7 @@
       type="module"
       crossorigin="true"
       async
-      src="https://widget.logaflow.com/addons/logaflow-widget.umd.js?version=1.0.0"></script>
+      src="https://widget.logaflow.com/addons/logaflow-widget.umd.js?version=1.0.3"></script>
   </head>
 
   <body class="bg-background font-poppins selection:bg-primary selection:text-primary-foreground">
@@ -50,7 +50,7 @@
         if (!exist) {
           const widget = document.createElement('logaflow-widget');
           widget.setAttribute('project-key', 'b4888071-1a6f-4197-9f1a-ed81975a9205');
-          widget.setAttribute('trigger-text', 'Send Feedback');
+          widget.setAttribute('trigger-text', 'Feedback');
 
           $placeholder.replaceWith(widget);
         }
