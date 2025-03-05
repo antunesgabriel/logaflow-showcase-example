@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="base">
   <head>
     <meta charset="utf-8" />
@@ -10,7 +10,7 @@
       type="module"
       crossorigin="true"
       async
-      src="https://widget.logaflow.com/addons/logaflow-widget.umd.js?version=1.0.5"></script>
+      src="https://widget.logaflow.com/addons/logaflow-widget.umd.js?version=2.0.0"></script>
   </head>
 
   <body class="bg-background font-poppins selection:bg-primary selection:text-primary-foreground">
@@ -21,10 +21,10 @@
         <div class="m-auto">
           <button
             type="button"
-            class="inline-flex cursor-not-allowed items-center rounded-md bg-primary px-4 py-2 text-sm font-semibold leading-6 text-primary-foreground shadow transition duration-150 ease-in-out"
+            class="inline-flex items-center py-2 px-4 text-sm font-semibold leading-6 rounded-md shadow transition duration-150 ease-in-out cursor-not-allowed bg-primary text-primary-foreground"
             disabled="">
             <svg
-              class="-ml-1 mr-3 h-5 w-5 animate-spin"
+              class="mr-3 -ml-1 w-5 h-5 animate-spin"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24">
@@ -49,8 +49,12 @@
 
         if (!exist) {
           const widget = document.createElement('logaflow-widget');
-          widget.setAttribute('project-key', 'b4888071-1a6f-4197-9f1a-ed81975a9205');
+          widget.setAttribute('project-key', 'pt_0e272a32-b654-4ad9-b65d-f8b9a1bb96bb');
           widget.setAttribute('trigger-text', 'Feedback');
+          widget.setAttribute('email', 'gabriel.antunes@logaflow.com');
+          widget.setAttribute('name', 'Antunes G.');
+          widget.setAttribute('avatar', 'https://avatars.githubusercontent.com/u/101927?v=4');
+          widget.setAttribute('user_id', '101927');
 
           $placeholder.replaceWith(widget);
         }
